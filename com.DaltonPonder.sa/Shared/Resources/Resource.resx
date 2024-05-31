@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SelectUICultureComponent.ButtonText" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="MainLayout.ConnectWithMe" xml:space="preserve">
+    <value>Connect With Me</value>
+  </data>
+  <data name="MainLayout.GitHubTitle" xml:space="preserve">
+    <value>GitHub Account Link</value>
+  </data>
+  <data name="MainLayout.LinkedInTitle" xml:space="preserve">
+    <value>LinkedIn Account Link</value>
+  </data>
+  <data name="Home.Title" xml:space="preserve">
+    <value>Welcome | DaltonPonder.com</value>
+  </data>
+  <data name="Home.WelcomeMessage" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="Home.HeroMessage3" xml:space="preserve">
+    <value>Sitefinity Dev.</value>
+  </data>
+  <data name="Home.HeroMessage2" xml:space="preserve">
+    <value>C# Full-Stack.</value>
+  </data>
+  <data name="Home.HeroMessage1" xml:space="preserve">
+    <value>Web Developer.</value>
+  </data>
+  <data name="SelectUICultureComponent.ButtonTitle" xml:space="preserve">
+    <value>Switch to Spanish</value>
+  </data>
+  <data name="Images.DaltonPonderAltText" xml:space="preserve">
+    <value>Professional Photo of Dalton Ponder</value>
+  </data>
+  <data name="Home.IAmDaltonPonder" xml:space="preserve">
+    <value>I am Dalton Ponder.</value>
+  </data>
+  <data name="Home.Introduction" xml:space="preserve">
+    <value>With a passion for collaboration and a friendly demeanor, I thrive on helping others and working seamlessly within a team. My educational journey led me to achieve a bachelor's degree in Computer Information Systems from Columbia College, followed by a master’s degree in Cybersecurity and Information Assurance from Western Governor’s University. Complementing my academic prowess, I earned the esteemed Certified Ethical Hacker certificate from the EC-Council.</value>
+  </data>
+  <data name="Home.Introduction2" xml:space="preserve">
+    <value>Currently, I contribute my expertise as a Web Developer at Smooth Fusion in Lubbock, TX. Specializing in Progress Sitefinity Content Management System (CMS) solutions, I bring a wealth of knowledge and a dedication to creating innovative and secure web solutions for clients. My commitment to excellence extends beyond the code, as I continue to foster a collaborative and supportive work environment for the entire team.</value>
+  </data>
+  <data name="Home.EducationHeader" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="Home.EducationCC" xml:space="preserve">
+    <value>B.S. Computer Information Systems</value>
+  </data>
+  <data name="Home.EducationWGU" xml:space="preserve">
+    <value>M.S. Cybersecurity &amp; Information Assurance</value>
+  </data>
+  <data name="Home.CEHCertificate" xml:space="preserve">
+    <value>EC-Council's Certified Ethical Hacker (CEH)</value>
+  </data>
+  <data name="Home.SitefinityDevCertificate" xml:space="preserve">
+    <value>Progress Sitefinity Certified Developer</value>
+  </data>
+  <data name="Home.CertificationsHeader" xml:space="preserve">
+    <value>Certifications</value>
+  </data>
+  <data name="Home.GetToKnowMeHeader" xml:space="preserve">
+    <value>Get To Know Me.</value>
+  </data>
+  <data name="Home.GetToKnowMe1" xml:space="preserve">
+    <value>Beyond my professional pursuits, I find fulfillment and balance in a diverse array of hobbies and interests. My paramount joy lies in spending quality time with my family, cherishing moments that create lasting bonds and memories. Immersed in the transformative power of music, I often find solace in its melodies, enriching my days with a soundtrack that resonates with my spirit.</value>
+  </data>
+  <data name="Home.GetToKnowMe2" xml:space="preserve">
+    <value>As a tech enthusiast, I indulge in the world of computer games, navigating virtual realms that challenge and captivate my mind. Outside the digital sphere, I channel my energy into the disciplined art of boxing, a physical endeavor that not only keeps me fit but instills a sense of focus and determination.</value>
+  </data>
+  <data name="Home.GetToKnowMe3" xml:space="preserve">
+    <value>In my continuous quest for personal development, I am dedicated to learning Spanish, opening doors to cultural understanding and global connections. Exploring the philosophical depths, I engage in the study of Stoicism, embracing its timeless principles for resilience and tranquility.</value>
+  </data>
+  <data name="Home.GetToKnowMe4" xml:space="preserve">
+    <value>Finally, amidst the ebb and flow of life, I find solace in the written word. Reading, for me, is not just a pastime but a journey into different worlds, ideas, and perspectives. These diverse interests weave a tapestry that shapes my character, fostering a well-rounded and engaged approach to both personal and professional spheres.</value>
+  </data>
+</root>

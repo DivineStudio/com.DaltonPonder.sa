@@ -1,0 +1,45 @@
+﻿@using com.DaltonPonder.sa.Constants
+@inject NavigationManager _navManager
+@inject ILocalStorageService _localStorage
+
+<MudButton OnClick="SetCulture" Variant="Variant.Outlined" Color="Color.Tertiary" Class="@Class" title="@Resource.SelectUICultureComponent_ButtonTitle" aria-label="@Resource.SelectUICultureComponent_ButtonTitle">@Resource.SelectUICultureComponent_ButtonText</MudButton>
+
+@code {
+    [Parameter]
+    public string Class { get; set; } = string.Empty;
+
+    private async Task SetCulture()
+    {
+        var result = await _localStorage.GetItemAsync<string>(CultureConstants.CurrentCultureKey);
+        CultureInfo culture;
+
+        if (result == null)
+        {
+            culture = new CultureInfo(CultureConstants.EnglishLanguageKey);
+            await _localStorage.SetItemAsStringAsync(CultureConstants.CurrentCultureKey, CultureConstants.EnglishLanguageKey);
+        }
+        else
+        {
+            switch (result)
+            {
+                case CultureConstants.EnglishLanguageKey:
+                    culture = new CultureInfo(CultureConstants.SpanishLanguageKey);
+                    break;
+                case CultureConstants.SpanishLanguageKey:
+                    culture = new CultureInfo(CultureConstants.EnglishLanguageKey);
+                    break;
+                default:
+                    culture = new CultureInfo(CultureConstants.EnglishLanguageKey);
+                    break;
+            }
+
+            await _localStorage.SetItemAsync(CultureConstants.CurrentCultureKey, culture.Name);
+        }
+
+        CultureInfo.CurrentUICulture = culture;
+        CultureInfo.CurrentCulture = culture;
+
+        // Load the Current URL
+        _navManager.NavigateTo(_navManager.Uri, forceLoad: true);
+    }
+}

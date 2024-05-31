@@ -1,0 +1,110 @@
+﻿@page "/"
+@using com.DaltonPonder.sa.Constants;
+
+<PageTitle>@Resource.Home_Title</PageTitle>
+
+<MudElement HtmlTag="section">
+    <MudContainer id="hero" MaxWidth="MaxWidth.False" Class="mud-elevation-10">
+        <MudContainer Class="px-5 px-lg-10 hero">
+            <MudGrid>
+                <MudItem xs="12" md="6" Class="hero__content-left pb-0">
+                    <MudImage Class="pt-10" Src="images/DaltonPonder_NoBG.webp" Alt="@Resource.Images_DaltonPonderAltText" />
+                </MudItem>
+                <MudItem xs="12" md="6" Class="hero__content-right">
+                    <MudElement HtmlTag="div">
+                        <MudText Typo="Typo.h1" Class="mud-primary-text">@Resource.Home_WelcomeMessage</MudText>
+                        <MudText Typo="Typo.h2" Class="mud-primary-text">@Resource.Home_HeroMessage1</MudText>
+                        <MudText Typo="Typo.h2" Class="mud-primary-text">@Resource.Home_HeroMessage2</MudText>
+                        <MudText Typo="Typo.h2" Class="mud-primary-text">@Resource.Home_HeroMessage3</MudText>
+                    </MudElement>
+                </MudItem>
+            </MudGrid>
+        </MudContainer>
+    </MudContainer>
+</MudElement>
+<MudContainer id="aboutMe" Class="px-5 px-lg-10 mt-10 mt-lg-16 about-me mud-elevation-0">
+    <MudElement HtmlTag="section">
+        <MudCard Elevation="5" Class="pa-5 mb-5 mud-theme-primary">
+            <MudText Typo="Typo.h1" Align="Align.Center" Class="text-white">@Resource.Home_IAmDaltonPonder</MudText>
+        </MudCard>
+    </MudElement>
+    <MudCard Elevation="5" Class="pa-8">
+        <MudText Typo="Typo.body1" Class="mb-5 mb-lg-7">
+            @Resource.Home_Introduction
+        </MudText>
+        <MudText Typo="Typo.body1">
+            @Resource.Home_Introduction2
+        </MudText>
+    </MudCard>
+</MudContainer>
+<MudContainer id="aboutMeCards" Class="px-5 px-lg-10 mt-10 mt-lg-14 mud-elevation-0">
+    <MudGrid>
+        <MudItem xs="12" lg="6">
+            <MudElement HtmlTag="section">
+                <MudCard Elevation="5" Class="pa-5 mb-5 mud-theme-secondary">
+                    <MudText Typo="Typo.h1" Align="Align.Center" Class="mud-primary-text">@Resource.Home_EducationHeader</MudText>
+                </MudCard>
+            </MudElement>
+            <MudCard Elevation="5" Class="pa-8">
+                <MudList>
+                    <MudListItem Icon="@Icons.Material.Filled.KeyboardArrowRight" IconSize="Size.Medium" IconColor="Color.Primary">
+                        <MudText Typo="Typo.body1">
+                            @Resource.Home_EducationCC
+                        </MudText>
+                    </MudListItem>
+                    <MudListItem Icon="@Icons.Material.Filled.KeyboardArrowRight" IconSize="Size.Medium" IconColor="Color.Primary">
+                        <MudText Typo="Typo.body1">
+                            @Resource.Home_EducationWGU
+                        </MudText>
+                    </MudListItem>
+                </MudList>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" lg="6" Class="mt-4 mt-lg-0">
+            <MudElement HtmlTag="section">
+                <MudCard Elevation="5" Class="pa-5 mb-5 mud-theme-secondary">
+                    <MudText Typo="Typo.h1" Align="Align.Center" Class="mud-primary-text">@Resource.Home_CertificationsHeader</MudText>
+                </MudCard>
+            </MudElement>
+            <MudCard Elevation="5" Class="pa-8">
+                <MudList>
+                    <MudListItem Icon="@Icons.Material.Filled.KeyboardArrowRight" IconSize="Size.Medium" IconColor="Color.Primary">
+                        <MudText Typo="Typo.body1">
+                            @Resource.Home_SitefinityDevCertificate
+                        </MudText>
+                    </MudListItem>
+                    <MudListItem Icon="@Icons.Material.Filled.KeyboardArrowRight" IconSize="Size.Medium" IconColor="Color.Primary">
+                        <MudText Typo="Typo.body1">
+                            @Resource.Home_CEHCertificate
+                        </MudText>
+                    </MudListItem>
+                </MudList>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+<MudContainer id="getToKnowMe" Class="px-5 px-lg-10 mt-10 mt-lg-14 about-me mud-elevation-0">
+    <MudElement HtmlTag="section">
+        <MudCard Elevation="5" Class="pa-5 mb-5 mud-theme-primary">
+            <MudText Typo="Typo.h1" Align="Align.Center" Class="text-white">@Resource.Home_GetToKnowMeHeader</MudText>
+        </MudCard>
+    </MudElement>
+    <MudCard Elevation="5" Class="pa-8">
+        <MudText Typo="Typo.body1" Class="mb-5 mb-lg-7">
+            @Resource.Home_GetToKnowMe1
+        </MudText>
+        <MudText Typo="Typo.body1" Class="mb-5 mb-lg-7">
+            @Resource.Home_GetToKnowMe2
+        </MudText>
+        <MudText Typo="Typo.body1" Class="mb-5 mb-lg-7">
+            @Resource.Home_GetToKnowMe3
+        </MudText>
+        <MudText Typo="Typo.body1">
+            @Resource.Home_GetToKnowMe4
+        </MudText>
+    </MudCard>
+</MudContainer>
+
+@code {
+
+}

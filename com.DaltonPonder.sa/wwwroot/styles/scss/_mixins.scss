@@ -1,0 +1,59 @@
+﻿@mixin bg-primary-dark-left {
+    background-color: $primary-dark;
+    z-index: 0;
+
+    &::before {
+        border-left: 9999px solid $primary-dark;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9998px;
+        right: 0;
+    }
+}
+
+@mixin bg-primary-dark-right {
+    background-color: $primary-dark;
+    z-index: 0;
+
+    &::after {
+        border-right: 9999px solid $primary-dark;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -9998px;
+    }
+}
+
+@mixin bg-secondary-left {
+    background-color: $secondary;
+    z-index: 0;
+
+    &::before {
+        border-left: 9999px solid $secondary;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -9998px;
+        right: 0;
+    }
+}
+
+@mixin bg-secondary-right {
+    background-color: $secondary;
+    z-index: 0;
+    
+    &::after {
+        border-right: 9999px solid $secondary;
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -9998px;
+    }
+}

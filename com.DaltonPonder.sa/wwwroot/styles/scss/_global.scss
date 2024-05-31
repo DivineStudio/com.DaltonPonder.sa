@@ -1,0 +1,6 @@
+﻿.bg-secondary-both {
+    @include bg-secondary-left;
+    @include bg-secondary-right;
+
+    background-color: $secondary;
+}

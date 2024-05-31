@@ -1,0 +1,28 @@
+﻿@using com.DaltonPonder.sa.Constants;
+@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="Helpers.MudThemeProviderHelper.GetMudTheme()" />
+
+@((MarkupString)"<!-- Hello! What is a developer's favorite drink? Da-queries. -->")
+
+<MudLayout>
+    <MudAppBar Elevation="10" ToolBarClass="px-5 px-xl-10">
+        <MudContainer Class="d-flex">
+            <MudSpacer />
+            <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Size="Size.Large" Color="Color.Inherit" Title="@Resource.MainLayout_GitHubTitle" Href="https://github.com/DivineStudio" Target="_blank" aria-label="@Resource.MainLayout_GitHubTitle" />
+            <MudIconButton Icon="@Icons.Custom.Brands.LinkedIn" Size="Size.Large" Color="Color.Inherit" Title="@Resource.MainLayout_LinkedInTitle" Href="https://www.linkedin.com/in/dalton-ponder-99a96a131/" Target="_blank" aria-label="@Resource.MainLayout_LinkedInTitle" />
+            @* <MudButton Class="ms-4" Variant="Variant.Filled" Size="Size.Medium" Color="Color.Tertiary">@Resource.MainLayout_ConnectWithMe</MudButton> *@
+            <com.DaltonPonder.sa.Shared.Components.SelectUICulture Class="ms-4"></com.DaltonPonder.sa.Shared.Components.SelectUICulture>
+        </MudContainer>
+    </MudAppBar>
+    <MudMainContent Class="pb-10 pb-lg-16">
+        @Body
+    </MudMainContent>
+    <MudScrollToTop>
+        <MudFab Color="Color.Primary" Icon="@Icons.Material.Filled.KeyboardDoubleArrowUp" />
+    </MudScrollToTop>
+</MudLayout>
+
+@code {
+
+}
