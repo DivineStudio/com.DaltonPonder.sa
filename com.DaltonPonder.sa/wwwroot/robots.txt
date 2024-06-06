@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*.ts$
+Disallow: /*.scss$
+
+Sitemap: https://daltonponder.com/sitemap.xml
+Sitemap: https://www.daltonponder.com/sitemap.xml
