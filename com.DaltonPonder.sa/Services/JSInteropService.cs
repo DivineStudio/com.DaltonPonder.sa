@@ -16,6 +16,11 @@ namespace com.DaltonPonder.sa.Services
             return await _jsRuntime.InvokeAsync<string>("getCultureFromBrowser");
         }
 
+        public async ValueTask SetHtmlLangAttribute(string culture)
+        {
+            await _jsRuntime.InvokeVoidAsync("setHtmlLangAttribute", culture);
+        }
+
         public void Dispose()
         {
         }

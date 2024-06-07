@@ -1,5 +1,7 @@
 ﻿@using com.DaltonPonder.sa.Constants;
+@using com.DaltonPonder.sa.Services
 @inherits LayoutComponentBase
+@inject IJSRuntime jsRuntime
 
 <MudThemeProvider Theme="Helpers.MudThemeProviderHelper.GetMudTheme()" />
 
@@ -24,5 +26,14 @@
 </MudLayout>
 
 @code {
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
 
+        using (var js = new JSInteropService(jsRuntime))
+        {
+            var culture = CultureInfo.CurrentUICulture;
+            await js.SetHtmlLangAttribute(culture.Name);
+        }
+    }
 }
