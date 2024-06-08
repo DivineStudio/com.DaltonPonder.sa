@@ -1,4 +1,22 @@
-﻿html {
+﻿.hidden-until-focus {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.hidden-until-focus:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 20px 10px;
+  border: solid 2px #000000;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+html {
   /*font-size: 16px;
   font-family: Roboto, Helvetica, Arial, sans-serif;*/
   overflow-x: hidden;
@@ -72,6 +90,14 @@ h3,
   bottom: 0;
   left: 0;
   right: -9998px;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #000000;
 }
 
 .mud-button {

@@ -21,6 +21,11 @@ namespace com.DaltonPonder.sa.Services
             await _jsRuntime.InvokeVoidAsync("setHtmlLangAttribute", culture);
         }
 
+        public async ValueTask SetUpSkipToAboutMe()
+        {
+            await _jsRuntime.InvokeVoidAsync("setUpSkipToAboutMe");
+        }
+
         public void Dispose()
         {
         }

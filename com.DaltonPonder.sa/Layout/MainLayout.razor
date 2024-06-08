@@ -9,6 +9,7 @@
 
 <MudLayout>
     <MudAppBar Elevation="10" ToolBarClass="px-5 px-xl-10">
+        <a href="#aboutMe" id="skipToAboutMe" class="hidden-until-focus">Go to main content</a>
         <MudContainer Class="d-flex">
             <MudSpacer />
             <MudIconButton Icon="@Icons.Custom.Brands.GitHub" Size="Size.Large" Color="Color.Inherit" Title="@Resource.MainLayout_GitHubTitle" Href="https://github.com/DivineStudio" Target="_blank" aria-label="@Resource.MainLayout_GitHubTitle" />
@@ -18,7 +19,9 @@
         </MudContainer>
     </MudAppBar>
     <MudMainContent Class="pb-10 pb-lg-16">
-        @Body
+        <main>
+            @Body
+        </main>
     </MudMainContent>
     <MudScrollToTop>
         <MudFab Color="Color.Primary" Icon="@Icons.Material.Filled.KeyboardDoubleArrowUp" />
@@ -34,6 +37,7 @@
         {
             var culture = CultureInfo.CurrentUICulture;
             await js.SetHtmlLangAttribute(culture.Name);
+            await js.SetUpSkipToAboutMe();
         }
     }
 }
