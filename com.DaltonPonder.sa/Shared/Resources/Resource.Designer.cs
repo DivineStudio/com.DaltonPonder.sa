@@ -187,7 +187,7 @@ namespace com.DaltonPonder.sa.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to With a passion for collaboration and a friendly demeanor, I thrive on helping others and working seamlessly within a team. My educational journey led me to achieve a bachelor&apos;s degree in Computer Information Systems from Columbia College, followed by a master’s degree in Cybersecurity and Information Assurance from Western Governor’s University. Complementing my academic prowess, I earned the esteemed Certified Ethical Hacker certificate from the EC-Council..
+        ///   Looks up a localized string similar to With a passion for collaboration and a friendly demeanor, I thrive on helping others and working seamlessly within a team. My educational journey led me to achieve a bachelor&apos;s degree in Computer Information Systems from Columbia College, followed by a master’s degree in Cybersecurity and Information Assurance from Western Governor’s University. Complementing my academic prowess, I earned the esteemed Certified Ethical Hacker certificate from the EC-Council. I am continuing my academic journey by pursuing a [rest of string was truncated]&quot;;.
         /// </summary>
         public static string Home_Introduction {
             get {
@@ -196,7 +196,7 @@ namespace com.DaltonPonder.sa.Shared.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Currently, I contribute my expertise as a Web Developer at Smooth Fusion in Lubbock, TX. Specializing in Progress Sitefinity Content Management System (CMS) solutions, I bring a wealth of knowledge and a dedication to creating innovative and secure web solutions for clients. My commitment to excellence extends beyond the code, as I continue to foster a collaborative and supportive work environment for the entire team..
+        ///   Looks up a localized string similar to Currently, I contribute my expertise working remotely as a Senior Web Developer at Smooth Fusion (Lubbock, TX). Specializing in Progress Sitefinity Content Management System (CMS) solutions, I bring a wealth of knowledge and a dedication to creating innovative and secure web solutions for clients. My commitment to excellence extends beyond the code, as I continue to foster a collaborative and supportive work environment for the entire team..
         /// </summary>
         public static string Home_Introduction2 {
             get {
